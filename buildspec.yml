@@ -25,5 +25,4 @@ phases:
       - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $AWS_ECR/$IMAGE_REPO_NAME:$IMAGE_TAG > imagedefinitions.json
 artifacts:
   files: # 빌드후에 배포단계로 옮길 파일들.
-    - imagedefinitions.json #push된 이미지로 부터 컨테이너를 배포하기 위함.
-~                                                                                
+    - imagedefinitions.json #push된 이미지로 부터 컨테이너를 배포하기 위함.                                                        
